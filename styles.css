@@ -39,6 +39,7 @@
 
 .thanks-message {
   transform: translate(-14%, 30%);
+  font-size: 18px;
 }
 
 body {
