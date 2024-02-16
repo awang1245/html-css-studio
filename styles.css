@@ -1,20 +1,122 @@
-#logoBar{
-  width: 30vw;
-  height: 100vh;
+.wrapper {
+  display: flex;
+  flex-direction: row;
 }
-#siteLogo{
+
+.logo-bar {
+  width: clamp(320px, 30%, 440px);
+  height: 100%;
+  font-family: "new-zen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff6ed;
+  color: #41110a;
+}
+
+.site-name {
+  width: 240px;
+  transform: translateY(-60%);
+  text-align: center;
+  font-size: 30px;
+}
+
+#site-logo {
   width: 100%;
 }
+
+.thanks {
+  display: flex;
+  align-items: center;
+}
+
+.pooh-image {
+  width: 120px;
+}
+
+.thanks-message {
+  transform: translate(-14%, 30%);
+}
+
 body {
   display: flex;
+  background-color: #fab792;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
-#staffGallery{
-  width: 70vw;
-  display: inherit;
 
+.staff-gallery {
+  box-shadow: 0px 2px 10px 0px rgba(63, 49, 94, 0.25);
+  padding: 48px 64px;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 24px;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
 }
-.galleryImage{
-  width: 100%;
-  height: auto;
-  height: 300px;
+
+.gallery-image {
+  width: 90%;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6ed;
+  width: 200px;
+  height: 240px;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0px 2px 10px 0px rgba(63, 49, 94, 0.25);
+  gap: 8px;
+}
+
+.staff-name {
+  font-family: "new-zen", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #41110a;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+@media (width <= 700px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .logo-bar {
+    height: clamp(280px, 40%, 480px);
+    width: 100%;
+  }
+
+  .site-name {
+    width: 100%;
+    transform: translateY(-150%);
+    font-size: clamp(28px, 5vw, 30px);
+  }
+
+  .thanks {
+    display: none;
+  }
+
+  .staff-gallery {
+    overflow-y: visible;
+  }
+
+  .profile-card {
+    width: 180px;
+    height: 220px;
+    gap: 8px;
+  }
 }

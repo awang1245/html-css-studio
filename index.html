@@ -1,32 +1,131 @@
-  <!-- TO RUN IN BROWSER:
+<!-- TO RUN IN BROWSER:
     1. Install vscode extension Name: open in `browser open-in-browser` by TechER
     2. Right click html file and either run in default browser or another browser
   -->
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://use.typekit.net/swv5ywc.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS Studio</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <!-- page content goes into <body> -->
   <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
-    </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
+    <div class="wrapper">
+      <div class="logo-bar">
+        <img
+          id="site-logo"
+          alt="Pooh-bear site logo"
+          src="./assets/Header.png"
+        />
+        <h1 class="site-name">WELCOME TO 100 ACRE WOOD</h1>
+        <div class="thanks">
+          <img class="pooh-image" src="./assets/Pooh-Jess.png" />
+          <h3 class="thanks-message">Thanks for visiting!</h3>
+        </div>
+      </div>
+      <div class="staff-gallery">
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Eeyore-Eh.png"
+            alt="Donkey from Winnie the Pooh rolling over"
+          />
+          <div class="staff-name">Eeyore does a flip!</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Eeyore-Zz.png"
+            alt="Sleeping donkey from Winnie the Pooh"
+          />
+          <div class="staff-name">Sleepy Eeyore</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Kanga-Roo.png"
+            alt="Mother and Joey kangaroos"
+          />
+          <div class="staff-name">Kanga & Roo</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Owl-Phone.png"
+            alt="Owl from Winnie the Pooh using a phone"
+          />
+          <div class="staff-name">Night Owl</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Owl-Music.png"
+            alt="Owl from Winnie the Pooh dancing to music"
+          />
+          <div class="staff-name">Owl Dancey Dance</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Piglet-Cold.png"
+            alt="Piglet from Winnie the Pooh dressed for cold weather"
+          />
+          <div class="staff-name">Piglet Chilly</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Piglet-Flower.png"
+            alt="Piglet holding a daisy flower"
+          />
+          <div class="staff-name">Daisy Piglet</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Rabbit-Carrot.png"
+            alt="Rabbit holding a carrot"
+          />
+          <div class="staff-name">CARROT</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Roo-Bee.png"
+            alt="Roo having a face off with a bee"
+          />
+          <div class="staff-name">Roo Bee</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Roo-Jump.png"
+            alt="Roo jumping"
+          />
+          <div class="staff-name">Roo Jumpy</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Tigger-Energy.png"
+            alt="Tigger drinking an energy drink"
+          />
+          <div class="staff-name">Tigger Drinkity</div>
+        </div>
+        <div class="profile-card">
+          <img
+            class="gallery-image"
+            src="./assets/Tigger-Jump.png"
+            alt="Tigger jumping"
+          />
+          <div class="staff-name">Tigger Bounce</div>
+        </div>
+      </div>
     </div>
   </body>
-
 </html>
